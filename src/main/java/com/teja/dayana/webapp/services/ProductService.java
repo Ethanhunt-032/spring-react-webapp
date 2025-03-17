@@ -46,7 +46,7 @@ public class ProductService {
   }
 
   private Product translateDbToWeb(ProductEntity entity){
-    return new Product(entity.getId(), entity.getName(), entity.getPrice(), entity.getVendorId());
+     return new Product(entity.getId(), entity.getName(), entity.getPrice(), entity.getVendorId());
   }
 
   private ProductEntity translateWebToDb(Product product){
